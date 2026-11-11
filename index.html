@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#08090d">
+<meta name="description" content="Arman Tanvir Ahmed — independent AI creative studio for visual stories, digital experiences and bold ideas.">
+<title>Arman Tanvir Ahmed — Creative Studio</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--bg:#08090d;--panel:#101219;--panel2:#151823;--line:rgba(255,255,255,.10);--muted:#9298a8;--text:#f4f5f8;--lime:#d6ff6b;--violet:#a99aff;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.55;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}.noise{position:fixed;inset:0;pointer-events:none;opacity:.035;z-index:5;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.45'/%3E%3C/svg%3E")}
+.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}.mono{font:11px 'DM Mono',monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}.accent{color:var(--lime)}.topbar{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-weight:800;letter-spacing:-.06em;font-size:19px}.brand span{color:var(--lime)}.nav{display:flex;gap:32px;align-items:center;color:#c1c4ce;font-size:12px}.nav a:hover{color:var(--lime)}.nav-cta{border:1px solid var(--line);padding:11px 16px;border-radius:99px}.menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:50%;width:40px;height:40px}
+.hero{padding:104px 0 88px;position:relative}.hero:after{content:"";position:absolute;width:470px;height:470px;right:4%;top:40px;border-radius:50%;background:radial-gradient(circle,rgba(169,154,255,.16),rgba(169,154,255,0) 68%);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:50px;align-items:end;position:relative;z-index:1}.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:26px}.dot{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 16px var(--lime)}h1{font-size:clamp(54px,8.3vw,112px);line-height:.94;letter-spacing:-.085em;margin:0;font-weight:700;max-width:850px}h1 .outline{color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.55)}.hero-copy{max-width:360px;color:#aeb3c0;font-size:15px;margin:0 0 24px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:18px;padding:14px 18px;border-radius:4px;font-size:12px;font-weight:800;transition:.2s}.btn-primary{background:var(--lime);color:#11140a}.btn-primary:hover{transform:translateY(-3px);box-shadow:0 10px 30px #d6ff6b25}.btn-ghost{border:1px solid var(--line);color:white}.btn-ghost:hover{border-color:var(--lime)}.hero-foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);margin-top:75px;padding-top:18px}.hero-foot p{margin:0}.orb-wrap{position:absolute;right:12%;top:100px;width:220px;height:220px;z-index:0;opacity:.85}.orb{width:100%;height:100%;border-radius:50%;background:radial-gradient(circle at 32% 28%,#f2edff 0,#b8a9ff 8%,#6152a5 24%,#222038 52%,#0b0c12 70%);box-shadow:inset -22px -25px 50px #000a,0 0 90px #9380ff25;filter:saturate(.8);animation:float 7s ease-in-out infinite}.orb:after{content:"";position:absolute;inset:18%;border:1px solid #ffffff2b;border-radius:50%;transform:rotate(-28deg) scaleX(1.5)}@keyframes float{50%{transform:translateY(-15px) rotate(8deg)}}
+.section{padding:90px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}.section h2{font-size:clamp(34px,5vw,58px);letter-spacing:-.07em;line-height:1;margin:12px 0 0}.section-intro{color:var(--muted);max-width:360px;font-size:13px;margin:0}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.service{background:var(--panel);border:1px solid var(--line);padding:27px;min-height:225px;position:relative;overflow:hidden;transition:.25s}.service:hover{border-color:#d6ff6b77;transform:translateY(-4px)}.service-num{font:11px 'DM Mono',monospace;color:var(--lime)}.service h3{font-size:20px;letter-spacing:-.04em;margin:40px 0 9px}.service p{color:var(--muted);font-size:12px;max-width:270px;margin:0}.service .arrow{position:absolute;right:25px;top:23px;color:#7f8493}.work-toolbar{display:flex;gap:8px;flex-wrap:wrap}.filter{background:transparent;color:#aeb3c0;border:1px solid var(--line);padding:9px 13px;border-radius:99px;font-size:11px;cursor:pointer}.filter.active,.filter:hover{background:var(--lime);border-color:var(--lime);color:#11140a}.projects{display:grid;grid-template-columns:1fr 1fr;gap:14px}.project{background:var(--panel);border:1px solid var(--line);overflow:hidden}.project-art{height:270px;position:relative;overflow:hidden;display:grid;place-items:center;background:#151522}.project-art:before,.project-art:after{content:"";position:absolute;border-radius:50%;filter:blur(1px)}.art-one{background:radial-gradient(ellipse at 50% 50%,#35305a,#171725 50%,#0d0e14)}.art-one:before{width:190px;height:190px;background:radial-gradient(circle at 35% 30%,#fff,#d9cfff 8%,#7866d9 35%,#282044 68%);box-shadow:0 0 80px #a99aff55}.art-one:after{width:280px;height:90px;border:1px solid #c7baff77;transform:rotate(-25deg)}.art-two{background:linear-gradient(135deg,#242d25,#111812)}.art-two:before{width:190px;height:190px;border-radius:36px;background:linear-gradient(140deg,#e4ff9a,#77983e 40%,#25321d);transform:rotate(18deg);box-shadow:0 25px 80px #a7d76b33}.art-two:after{width:230px;height:230px;border:1px solid #d6ff6b77}.art-three{background:linear-gradient(135deg,#28202c,#101016)}.art-three:before{width:200px;height:200px;background:conic-gradient(from 40deg,#ffb5a5,#7651a9,#171323,#ffb5a5);mask:radial-gradient(circle,transparent 34%,#000 35%);box-shadow:0 0 70px #b47ad755}.art-four{background:linear-gradient(135deg,#182b36,#11131b)}.art-four:before{width:230px;height:140px;border:1px solid #8fe4ff;border-radius:50%;transform:rotate(-35deg);box-shadow:0 0 35px #6edaff44,inset 0 0 30px #6edaff22}.art-four:after{width:115px;height:115px;background:radial-gradient(circle at 30% 30%,#e5fbff,#4f9bb0 35%,#162c3a 75%);box-shadow:0 0 60px #6edaff55}.art-label{position:absolute;top:18px;left:18px;z-index:1}.project-info{padding:19px 20px;display:flex;justify-content:space-between;gap:15px;align-items:center}.project-info h3{font-size:16px;margin:0 0 4px;letter-spacing:-.04em}.project-info p{font-size:11px;color:var(--muted);margin:0}.project-link{border:1px solid var(--line);border-radius:50%;width:38px;height:38px;display:grid;place-items:center;color:var(--lime)}.project[hidden]{display:none}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.about-mark{background:var(--panel);border:1px solid var(--line);min-height:310px;display:grid;place-items:center;position:relative;overflow:hidden}.about-mark .monogram{font-size:150px;letter-spacing:-.12em;font-weight:800;color:transparent;-webkit-text-stroke:1px #d6ff6b88}.about-mark:after{content:"";position:absolute;width:220px;height:220px;border:1px solid #d6ff6b44;border-radius:50%}.about-copy h3{font-size:clamp(24px,3vw,38px);line-height:1.18;letter-spacing:-.06em;margin:0 0 18px}.about-copy p{color:var(--muted);font-size:13px;max-width:600px}.stats{display:flex;gap:42px;margin-top:32px}.stat strong{font-size:28px;letter-spacing:-.06em;display:block}.stat span{font:10px 'DM Mono',monospace;color:var(--muted);text-transform:uppercase}
+.contact{background:var(--lime);color:#11140a;padding:62px 0}.contact .mono{color:#424c27}.contact-grid{display:flex;justify-content:space-between;align-items:center;gap:30px}.contact h2{font-size:clamp(38px,6vw,72px);letter-spacing:-.08em;line-height:.95;margin:12px 0 0}.contact .btn{background:#11140a;color:var(--lime)}.footer{padding:28px 0;color:var(--muted);font-size:11px}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.socials{display:flex;gap:20px}.socials a:hover{color:var(--lime)}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:760px){.wrap{width:min(var(--max),calc(100% - 32px))}.topbar{height:68px}.nav{display:none;position:absolute;top:68px;left:0;right:0;background:#101219;padding:22px 24px;z-index:10;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.nav.open{display:flex}.menu{display:block}.hero{padding:75px 0 55px}.hero-grid{grid-template-columns:1fr;gap:32px}.hero-copy{max-width:480px}.orb-wrap{width:130px;height:130px;right:5%;top:80px;opacity:.45}.hero-foot{margin-top:52px}.section{padding:68px 0}.section-head{align-items:flex-start;flex-direction:column}.services{grid-template-columns:1fr}.service{min-height:190px}.service h3{margin-top:28px}.projects{grid-template-columns:1fr}.project-art{height:230px}.about-grid{grid-template-columns:1fr;gap:28px}.about-mark{min-height:220px}.about-mark .monogram{font-size:110px}.stats{gap:24px}.contact-grid{align-items:flex-start;flex-direction:column}.footer-row{align-items:flex-start;flex-direction:column}.hero-foot .mono:last-child{display:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="noise"></div>
+<header class="wrap topbar">
+  <a class="brand" href="#top">ARMAN<span>.</span></a>
+  <nav class="nav" id="nav"><a href="#services">What I do</a><a href="#work">Selected work</a><a href="#about">About</a><a class="nav-cta" href="#contact">Let's talk ↗</a></nav>
+  <button class="menu" id="menu" aria-label="Open navigation">☰</button>
+</header>
+<main id="top">
+<section class="wrap hero">
+  <div class="orb-wrap"><div class="orb"></div></div>
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow mono"><span class="dot"></span> INDEPENDENT AI CREATIVE STUDIO</div>
+      <h1>Ideas into<br><span class="outline">experiences.</span></h1>
+    </div>
+    <div>
+      <p class="hero-copy">I'm Arman Tanvir Ahmed. I bring imagination and emerging technology together to create visual stories, digital experiences and work that feels unmistakably human.</p>
+      <div class="actions"><a class="btn btn-primary" href="#work">EXPLORE THE WORK <span>↘</span></a><a class="btn btn-ghost" href="#about">MEET ARMAN ↗</a></div>
+    </div>
+  </div>
+  <div class="hero-foot"><p class="mono">CREATIVE DIRECTION / AI VISUALS / DIGITAL</p><p class="mono">ASSAM, INDIA · WORKING WORLDWIDE</p></div>
+</section>
+
+<section class="section" id="services"><div class="wrap">
+  <div class="section-head reveal"><div><div class="mono">01 / CAPABILITIES</div><h2>Small studio.<br>Big imagination.</h2></div><p class="section-intro">A flexible creative practice for ideas that deserve more than the ordinary. From the first spark to the final frame.</p></div>
+  <div class="services">
+    <article class="service reveal"><span class="service-num">01 — VISUAL STORIES</span><span class="arrow">↗</span><h3>AI video & motion</h3><p>Short-form stories, character-led animation concepts, cinematic scenes and social-first visuals.</p></article>
+    <article class="service reveal"><span class="service-num">02 — DIGITAL WORLDS</span><span class="arrow">↗</span><h3>Web & experiences</h3><p>Distinctive landing pages, portfolio experiences and digital concepts with thoughtful details.</p></article>
+    <article class="service reveal"><span class="service-num">03 — BRAND EXPRESSION</span><span class="arrow">↗</span><h3>Identity & content</h3><p>Creative direction, visual systems, campaign ideas and content that gives a brand a point of view.</p></article>
+  </div>
+</div></section>
+
+<section class="section" id="work"><div class="wrap">
+  <div class="section-head reveal"><div><div class="mono">02 / SELECTED CONCEPTS</div><h2>Made to make<br>you look twice.</h2></div><div class="work-toolbar" aria-label="Filter projects"><button class="filter active" data-filter="all">ALL</button><button class="filter" data-filter="visual">VISUALS</button><button class="filter" data-filter="digital">DIGITAL</button><button class="filter" data-filter="identity">IDENTITY</button></div></div>
+  <div class="projects">
+    <article class="project reveal" data-category="visual"><div class="project-art art-one"><span class="art-label mono">CONCEPT 001 / 3D VISUAL</span></div><div class="project-info"><div><h3>Orbital — Worlds in motion</h3><p>3D art direction · Visual exploration</p></div><span class="project-link">↗</span></div></article>
+    <article class="project reveal" data-category="identity"><div class="project-art art-two"><span class="art-label mono">CONCEPT 002 / BRAND SYSTEM</span></div><div class="project-info"><div><h3>Verdant — A brighter future</h3><p>Brand direction · Campaign concept</p></div><span class="project-link">↗</span></div></article>
+    <article class="project reveal" data-category="visual"><div class="project-art art-three"><span class="art-label mono">CONCEPT 003 / MOTION STUDY</span></div><div class="project-info"><div><h3>Afterglow — Shape of light</h3><p>Motion language · Art experiment</p></div><span class="project-link">↗</span></div></article>
+    <article class="project reveal" data-category="digital"><div class="project-art art-four"><span class="art-label mono">CONCEPT 004 / DIGITAL DESIGN</span></div><div class="project-info"><div><h3>Deep Signal — Beyond the grid</h3><p>Interface concept · Digital experience</p></div><span class="project-link">↗</span></div></article>
+  </div>
+  <p class="mono" style="margin-top:18px">NOTE: THESE ARE VISUAL CONCEPT PLACEHOLDERS — REPLACE WITH YOUR OWN PUBLISHED PROJECTS.</p>
+</div></section>
+
+<section class="section" id="about"><div class="wrap">
+  <div class="section-head reveal"><div><div class="mono">03 / THE PERSON BEHIND IT</div><h2>Human taste.<br>New tools.</h2></div></div>
+  <div class="about-grid">
+    <div class="about-mark reveal"><div class="monogram">A.</div></div>
+    <div class="about-copy reveal"><h3>I'm Arman — a curious creator exploring what's possible when creativity meets technology.</h3><p>This studio is my space to experiment, build and share. I use AI as a creative instrument, not a substitute for ideas, taste or intention. The goal is simple: make work that connects with people.</p><p>Whether it's a playful character, a cinematic visual or a polished digital experience, every project starts with a clear idea and a human point of view.</p><div class="stats"><div class="stat"><strong>01</strong><span>Curious mind</span></div><div class="stat"><strong>∞</strong><span>Ideas to explore</span></div><div class="stat"><strong>100%</strong><span>Creative intent</span></div></div></div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap contact-grid"><div><div class="mono">HAVE A GOOD IDEA?</div><h2>Let's make<br>something matter.</h2></div><a class="btn" href="mailto:hello@example.com?subject=Let's%20create%20something">START A CONVERSATION ↗</a></div></section>
+</main>
+<footer class="wrap footer"><div class="footer-row"><span>© <span id="year"></span> ARMAN TANVIR AHMED. MADE WITH INTENTION.</span><div class="socials"><a href="#top">BACK TO TOP ↑</a><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">INSTAGRAM ↗</a><a href="https://www.youtube.com/" target="_blank" rel="noreferrer">YOUTUBE ↗</a></div></div></footer>
+<script>
+const menu=document.getElementById('menu'),nav=document.getElementById('nav');
+menu.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+  document.querySelectorAll('.project').forEach(card=>card.hidden=btn.dataset.filter!=='all'&&card.dataset.category!==btn.dataset.filter);
+}));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body></html>
